@@ -22,5 +22,4 @@ export function* itemPriceSaga() {
     ])
 
     yield items.map(item=> call(fetchItemPrice, item.id, user.country))
-
 }
